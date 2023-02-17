@@ -1,0 +1,360 @@
+* {
+    top: 50px;
+}
+
+
+body {
+    transition: background 0.2s linear;
+    background-image: url(../img/ceuclaro.jpg);
+}
+
+body .dark {
+    background-image: url(../img/ceudark.png);
+}
+
+chk-div .dark {
+    background: #22212c;
+}
+
+/* navbar */
+
+.checkbox {
+    opacity: 0;
+    position: absolute;
+
+}
+
+.label {
+    border-color: #22212c;
+    display: flex;
+    width: 50px;
+    padding: 7px;
+    background-color: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    top: 10px;
+    left: 1350px;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    transform: scale(1.2);
+}
+
+.label .ball {
+    background-color: #22212c;
+    border-radius: 50%;
+    position: absolute;
+    top: 4px;
+
+    height: 22px;
+    width: 22px;
+
+    transform: translateX(0px);
+    transition: transform 0.2s linear;
+}
+
+.checkbox:checked+.label .ball {
+    transform: translateX(27px);
+}
+
+.lua {
+    color: #f1c40f;
+}
+
+.sol {
+    color: #f39c12;
+}
+
+/* Card nome e foto */
+
+.card-main {
+    top: 80px;
+    left: 15px;
+    position: absolute;
+    width: 270px;
+    height: 253px;
+    background: #88CCF1;
+    border-radius: 50px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.card-main h3 {
+    position: absolute;
+    width: 300px;
+    height: 30px;
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    left: 25px;
+    top: 160px;
+}
+
+.card-main p {
+    position: absolute;
+    width: 300px;
+    height: 30px;
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 24px;
+    left: 50px;
+    top: 190px;
+}
+
+.card-main img {
+    top: 10px;
+    left: 50px;
+    border-radius: 100%;
+    width: 140px;
+    height: 140px;
+    position: absolute;
+}
+
+/* Card informaçoes de contato */
+
+.C-info {
+    top: 360px;
+    left: 15px;
+    position: absolute;
+    width: 270px;
+    height: 300px;
+    background: #88CCF1;
+    border-radius: 50px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2)
+}
+
+ul li {
+    list-style: none;
+}
+
+ul a {
+    text-decoration: none;
+}
+
+ul span {
+    line-height: 57px;
+    color: #fff;
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+.C-info ion-icon {
+    color: #fff;
+    font-size: 25px;
+    left: 2px;
+}
+
+/* Tecnologias */
+
+.C-tec {
+    top: 700px;
+    left: 15px;
+    position: absolute;
+    width: 270px;
+    height: 200px;
+    background: #88CCF1;
+    border-radius: 50px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.C-tec span {
+    position: absolute;
+    top: 12px;
+    left: 45px;
+    color: #fff;
+    font-size: 17px;
+    font-family: monospace;
+}
+
+/* as tecnologias */
+
+.javascript {
+    font-size: 40px;
+    top: 60px;
+    left: 20px;
+    position: absolute;
+    color: yellow;
+    box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.2);
+}
+
+.Css {
+    color: blue;
+    font-size: 40px;
+    top: 60px;
+    left: 80px;
+    position: absolute;
+    box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.2);
+}
+
+.html {
+    font-size: 40px;
+    top: 60px;
+    left: 140px;
+    position: absolute;
+    box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.2);
+    color: orangered;
+}
+
+.laravel {
+    font-size: 40px;
+    top: 60px;
+    left: 200px;
+    position: absolute;
+    box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.2);
+    color: red;
+}
+
+.NODE {
+    color: #37D725;
+    font-size: 40px;
+    top: 120px;
+    left: 20px;
+    position: absolute;
+    box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.2);
+}
+
+.DOCKER {
+    color: #2454D6;
+    font-size: 40px;
+    top: 120px;
+    left: 80px;
+    position: absolute;
+
+    box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.2);
+}
+
+.PY {
+    color: rgb(87, 87, 243);
+    font-size: 40px;
+    top: 120px;
+    left: 140px;
+    position: absolute;
+
+    box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.2);
+}
+
+.LINUX {
+    color: black;
+    font-size: 40px;
+    top: 120px;
+    left: 200px;
+    position: absolute;
+    box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Barra My projects */
+
+.C-projects {
+    top: 80px;
+    left: 375px;
+    position: absolute;
+    width: 700px;
+    height: 70px;
+    background: #88CCF1;
+    border-radius: 50px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.C-projects h1 {
+    top: 0px;
+    left: 250px;
+    position: absolute;
+    color: #fff;
+    font-size: 30px;
+    font-family: monospace;
+}
+
+.scrol {
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+/* Clima */
+.Clima {
+    top: 90px;
+    left: 0px;
+    position: absolute;
+    width: 270px;
+    height: 253px;
+    background: #88CCF1;
+    border-radius: 50px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2)
+}
+
+.Clima span {
+    top: 200px;
+    left: 80px;
+    position: absolute;
+    color: #fff;
+    font-size: 20px;
+    font-family: monospace
+}
+
+.folder {
+    position: absolute;
+    font-size: 25px;
+    color: #fff;
+    left: 20px;
+    top: 30px;
+}
+
+.Clima span:hover {
+    transform: translateX(5px) translateY(5px);
+    box-shadow: #22212c 7px 9px 0px;
+}
+
+/* Sobre Mim */
+
+.C-sobre {
+    top: 550px;
+    left: 375px;
+    position: absolute;
+    width: 900px;
+    height: 460px;
+    background: #88CCF1;
+    border-radius: 50px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.C-sobre h2 {
+    top: 0;
+    left: 350px;
+    position: absolute;
+    align-content: center;
+    font-family: monospace;
+    color: #fff;
+    font-size: 25px;
+}
+
+.C-sobre h3 {
+    top: 40px;
+    left: 300px;
+    position: absolute;
+    align-content: center;
+    font-family: monospace;
+    color: #fff;
+    font-size: 20px;
+}
+
+.C-sobre p {
+    top: 70px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #fff;
+    font-size: 20px;
+    line-height: 30px;
+    position: absolute;
+    left: 20px;
+}
+
+.C-sobre span {
+    color: #942cf0;
+}
+
+/*  */
