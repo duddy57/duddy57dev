@@ -1,6 +1,9 @@
-const chk = Document.getElementById('#chk')
+let docTitle = document.title;
 
+window.addEventListener("blur", () => {
+    document.title="VOLTE ;(";
+});
 
-chk.addEventListener('charge', function () {
-    document.body.classlist.toogle('dark')
-})
+window.addEventListener("focus", () => {
+    document.title = docTitle;
+});

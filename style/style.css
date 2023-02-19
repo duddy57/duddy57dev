@@ -8,61 +8,14 @@ body {
     background-image: url(../img/ceuclaro.jpg);
 }
 
-body .dark {
-    background-image: url(../img/ceudark.png);
-}
+@media (prefers-color-scheme: dark) {
+    body {
+      background-image: url(../img/ceudark.png);
+    }
 
-chk-div .dark {
-    background: #22212c;
-}
-
-/* navbar */
-
-.checkbox {
-    opacity: 0;
-    position: absolute;
-
-}
-
-.label {
-    border-color: #22212c;
-    display: flex;
-    width: 50px;
-    padding: 7px;
-    background-color: #fff;
-    border-radius: 50px;
-    cursor: pointer;
-    top: 10px;
-    left: 1350px;
-    position: relative;
-    align-items: center;
-    justify-content: space-between;
-    transform: scale(1.2);
-}
-
-.label .ball {
-    background-color: #22212c;
-    border-radius: 50%;
-    position: absolute;
-    top: 4px;
-
-    height: 22px;
-    width: 22px;
-
-    transform: translateX(0px);
-    transition: transform 0.2s linear;
-}
-
-.checkbox:checked+.label .ball {
-    transform: translateX(27px);
-}
-
-.lua {
-    color: #f1c40f;
-}
-
-.sol {
-    color: #f39c12;
+    #chk-div {
+        background-color: #22212c;
+    }
 }
 
 /* Card nome e foto */
