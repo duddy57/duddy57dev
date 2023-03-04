@@ -2,15 +2,22 @@
     top: 50px;
 }
 
+/*--dark mode--*/
+
+
+
+
 
 body {
     transition: background 0.2s linear;
     background-image: url(../img/ceuclaro.jpg);
+    
 }
 
 @media (prefers-color-scheme: dark) {
     body {
       background-image: url(../img/ceudark.png);
+      
     }
 
     #chk-div {
@@ -21,6 +28,9 @@ body {
 /* Card nome e foto */
 
 .card-main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
     top: 80px;
     left: 15px;
     position: absolute;
@@ -71,6 +81,9 @@ body {
 /* Card informaçoes de contato */
 
 .C-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
     top: 360px;
     left: 15px;
     position: absolute;
@@ -107,6 +120,9 @@ ul span {
 /* Tecnologias */
 
 .C-tec {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
     top: 700px;
     left: 15px;
     position: absolute;
@@ -134,7 +150,7 @@ ul span {
     left: 20px;
     position: absolute;
     color: yellow;
-    box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.2);
+    filter: drop-shadow(5px 5px 7px #ffb703);
 }
 
 .Css {
@@ -143,7 +159,7 @@ ul span {
     top: 60px;
     left: 80px;
     position: absolute;
-    box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.2);
+    filter: drop-shadow(5px 5px 7px #4661ee);
 }
 
 .html {
@@ -151,8 +167,8 @@ ul span {
     top: 60px;
     left: 140px;
     position: absolute;
-    box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.2);
-    color: orangered;
+    filter: drop-shadow(5px 5px 7px #e85d04);
+    color: #e85;
 }
 
 .laravel {
@@ -160,7 +176,7 @@ ul span {
     top: 60px;
     left: 200px;
     position: absolute;
-    box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.2);
+    filter: drop-shadow(5px 5px 7px #d90429);
     color: red;
 }
 
@@ -170,7 +186,7 @@ ul span {
     top: 120px;
     left: 20px;
     position: absolute;
-    box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.2);
+    filter: drop-shadow(5px 5px 7px #2b9348);
 }
 
 .DOCKER {
@@ -179,8 +195,7 @@ ul span {
     top: 120px;
     left: 80px;
     position: absolute;
-
-    box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.2);
+    filter: drop-shadow(5px 5px 7px #1f58f5);
 }
 
 .PY {
@@ -189,8 +204,7 @@ ul span {
     top: 120px;
     left: 140px;
     position: absolute;
-
-    box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.2);
+    filter: drop-shadow(5px 5px 7px yellow);
 }
 
 .LINUX {
@@ -199,12 +213,15 @@ ul span {
     top: 120px;
     left: 200px;
     position: absolute;
-    box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.2);
+    filter: drop-shadow(5px 5px 7px white);
 }
 
 /* Barra My projects */
 
 .C-projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
     top: 80px;
     left: 375px;
     position: absolute;
@@ -234,8 +251,8 @@ ul span {
     top: 90px;
     left: 0px;
     position: absolute;
-    width: 270px;
-    height: 253px;
+    width: 250px;
+    height: 230px;
     background: #88CCF1;
     border-radius: 50px;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2)
@@ -251,10 +268,10 @@ ul span {
 }
 
 .folder {
+    left: 20px;
     position: absolute;
     font-size: 25px;
     color: #fff;
-    left: 20px;
     top: 30px;
 }
 
@@ -266,7 +283,11 @@ ul span {
 /* Sobre Mim */
 
 .C-sobre {
-    top: 550px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    filter: drop-shadow(5px 5px 7px white);
+    top: 450px;
     left: 375px;
     position: absolute;
     width: 900px;
@@ -274,6 +295,12 @@ ul span {
     background: #88CCF1;
     border-radius: 50px;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    animation: card-sobre 10s infinite ease-in-out;
+}
+@keyframes card-sobre {
+    70%{
+        transform: translateY(-5%);
+    }
 }
 
 .C-sobre h2 {
@@ -307,7 +334,11 @@ ul span {
 }
 
 .C-sobre span {
-    color: #942cf0;
+  background-image: linear-gradient(to left, #6910a8, #9381FF);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: black;
 }
 
 /*  */
