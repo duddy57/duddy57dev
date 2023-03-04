@@ -5,9 +5,6 @@
 /*--dark mode--*/
 
 
-
-
-
 body {
     transition: background 0.2s linear;
     background-image: url(../img/ceuclaro.jpg);
